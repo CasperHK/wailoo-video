@@ -196,8 +196,8 @@ export default component$(() => {
         <article class="split-card">
           <h3>本地素材共創池</h3>
           <p>共享香港街景B-roll、原創OST，降低獨立拍攝門檻。</p>
-          <a href="#" class="text-link">
-            進入素材池
+          <a href="/shop" class="text-link">
+            進入潮流商城
           </a>
         </article>
         <article class="split-card">

@@ -13,6 +13,9 @@ export default component$(() => {
 
         <ul class={styles.navList}>
           <li>
+            <a href="/shop">商城</a>
+          </li>
+          <li>
             <a href="/#featured">精選</a>
           </li>
           <li>
@@ -27,11 +30,11 @@ export default component$(() => {
         </ul>
 
         <div class={styles.actions}>
-          <a href="/#featured" class={styles.primaryCta}>
-            睇片
+          <a href="/shop" class={styles.primaryCta}>
+            購物
           </a>
-          <a href="/#creators" class={styles.secondaryCta}>
-            開爐
+          <a href="/shop/cart" class={styles.secondaryCta}>
+            購物車
           </a>
         </div>
       </div>
