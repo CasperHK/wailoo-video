@@ -1,0 +1,15 @@
+{
+  "name": "wailoo-video",
+  "private": true,
+  "packageManager": "bun@1.3.11",
+  "workspaces": [
+    "src/frontend"
+  ],
+  "scripts": {
+    "frontend:dev": "bun run --cwd src/frontend dev",
+    "frontend:start": "bun run --cwd src/frontend start",
+    "frontend:build": "bun run --cwd src/frontend build",
+    "frontend:lint": "bun run --cwd src/frontend lint",
+    "frontend:fmt": "bun run --cwd src/frontend fmt"
+  }
+}

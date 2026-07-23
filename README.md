@@ -55,12 +55,26 @@ git clone https://github.com/ailoo-hk/wailoo-video.git
 # 進入專案資料夾
 cd wailoo-video
 
-# 安裝依賴
-pnpm install
+# 安裝前端依賴（Qwik City）
+cd src/frontend
+bun install
 
 # 啟動本地開發伺服器
-pnpm dev
+bun run dev
 ```
+
+或在專案根目錄使用快捷指令：
+
+```bash
+bun run frontend:dev
+```
+
+---
+
+## 🗂️ 專案結構 (Project Structure)
+
+- `src/frontend`：Qwik + Qwik City 前端（已建立）
+- `src/backend`：預留後端服務模組
 
 ---
 

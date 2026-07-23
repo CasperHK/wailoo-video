@@ -1,0 +1,50 @@
+.footer {
+  margin-top: 2.6rem;
+  border-top: 1px solid rgba(255, 214, 152, 0.16);
+  background: rgba(16, 13, 11, 0.76);
+}
+
+.shell {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff2dc;
+}
+
+.caption {
+  margin-top: 0.4rem;
+  color: rgba(248, 232, 206, 0.82);
+  line-height: 1.55;
+  font-size: 0.86rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.links a {
+  color: #ffd58f;
+  font-size: 0.86rem;
+}
+
+.date {
+  margin: 0;
+  color: rgba(248, 232, 206, 0.72);
+  font-size: 0.78rem;
+}
+
+@media (min-width: 768px) {
+  .shell {
+    grid-template-columns: 2fr auto auto;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
