@@ -177,6 +177,16 @@ a {
   scroll-snap-align: start;
 }
 
+.video-link {
+  color: inherit;
+  display: block;
+}
+
+.video-link:hover h3,
+.video-link:focus-visible h3 {
+  color: #ffdca4;
+}
+
 .video-thumb {
   height: 124px;
   border-radius: 12px;

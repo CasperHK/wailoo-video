@@ -3,36 +3,42 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 const featuredVideos = [
   {
+    slug: "neon-second-scene",
     title: "霓虹下的第二場戲",
     creator: "阿朗導演工作室",
     genre: "微電影",
     duration: "12:41",
   },
   {
+    slug: "mongkok-3am",
     title: "旺角凌晨三點",
     creator: "街角攝影社",
     genre: "紀實短片",
     duration: "08:19",
   },
   {
+    slug: "ferry-wind-rail",
     title: "海風與鐵路",
     creator: "離島影像計劃",
     genre: "實驗影像",
     duration: "06:55",
   },
   {
+    slug: "farewell-vhs",
     title: "告別錄影帶",
     creator: "菲林復興組",
     genre: "短片",
     duration: "10:07",
   },
   {
+    slug: "bridge-in-rain",
     title: "雨夜天橋",
     creator: "城景聲音部",
     genre: "音樂影像",
     duration: "04:44",
   },
   {
+    slug: "market-dawn-notes",
     title: "天光墟日記",
     creator: "新界小隊",
     genre: "人物故事",
@@ -126,12 +132,14 @@ export default component$(() => {
         <div class="video-rail" role="list" aria-label="精選作品列表">
           {featuredVideos.map((video) => (
             <article class="video-card" role="listitem" key={video.title}>
-              <div class="video-thumb" aria-hidden="true">
-                <span>{video.duration}</span>
-              </div>
-              <h3>{video.title}</h3>
-              <p>{video.creator}</p>
-              <span class="meta-pill">{video.genre}</span>
+              <a href={`/videos/${video.slug}`} class="video-link" aria-label={`觀看 ${video.title}`}>
+                <div class="video-thumb" aria-hidden="true">
+                  <span>{video.duration}</span>
+                </div>
+                <h3>{video.title}</h3>
+                <p>{video.creator}</p>
+                <span class="meta-pill">{video.genre}</span>
+              </a>
             </article>
           ))}
         </div>

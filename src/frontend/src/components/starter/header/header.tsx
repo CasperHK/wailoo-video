@@ -13,21 +13,24 @@ export default component$(() => {
 
         <ul class={styles.navList}>
           <li>
-            <a href="#featured">精選</a>
+            <a href="/#featured">精選</a>
           </li>
           <li>
-            <a href="#creators">創作者</a>
+            <a href="/#creators">創作者</a>
           </li>
           <li>
-            <a href="#news">新聞</a>
+            <a href="/#news">新聞</a>
+          </li>
+          <li>
+            <a href="/videos/neon-second-scene">影片內頁</a>
           </li>
         </ul>
 
         <div class={styles.actions}>
-          <a href="#featured" class={styles.primaryCta}>
+          <a href="/#featured" class={styles.primaryCta}>
             睇片
           </a>
-          <a href="#creators" class={styles.secondaryCta}>
+          <a href="/#creators" class={styles.secondaryCta}>
             開爐
           </a>
         </div>
